@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/writersFragment2"
+        android:icon="@drawable/ic_frame"
+        android:contentDescription="aaa"
+        android:title="Adiblar" />
+    <item
+        android:id="@+id/libraryFragment2"
+        android:icon="@drawable/book"
+        android:contentDescription="asss"
+        android:title="Kutubxona" />
+    <item
+        android:id="@+id/saveFragment2"
+        android:contentDescription="ccc"
+        android:icon="@drawable/save"
+        android:title="Sozlamalar" />
+
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".AddFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adib qo'shish"
+        android:textColor="#303236"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        android:id="@+id/image_adib"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Adib rasmi"
+        android:textAllCaps="false"
+        android:id="@+id/img_btn"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/back_btn"
+        app:layout_constraintTop_toBottomOf="@+id/image_adib"/>
+    <EditText
+        android:id="@+id/adib_name"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/back_et"
+        android:hint="Adib ismi, familyasi, otasining ismi"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn"/>
+    <EditText
+        android:id="@+id/adib_year"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/back_et"
+        android:hint="Tug`ilgan yili"
+        app:layout_constraintTop_toBottomOf="@+id/adib_name"/>
+    <EditText
+        android:id="@+id/adib_year_end"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/back_et"
+        android:hint="Vafot etgan yili"
+        app:layout_constraintTop_toBottomOf="@+id/adib_year"/>
+    <Spinner
+        android:id="@+id/type_spinner"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/back_et"
+        android:hint="Turi"
+        app:layout_constraintTop_toBottomOf="@+id/adib_year_end"/>
+    <EditText
+        android:id="@+id/adib_desc"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:gravity="start"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/back_et"
+        android:hint="Adib haqida to'iq ma'lumot"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/type_spinner"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Saqlash"
+            android:textSize="16dp"
+            android:id="@+id/save_btn"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="50dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/back_btn"
+            app:layout_constraintTop_toBottomOf="@+id/adib_desc"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

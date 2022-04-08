@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.adiblarappp.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.adiblarappp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_writersFragment"
+            app:destination="@id/writersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_saveFragment"
+            app:destination="@id/saveFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.adiblarappp.SettingsFragment"
+        android:label="fragment_settings2"
+        tools:layout="@layout/fragment_settings2" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_addFragment2"
+            app:destination="@id/addFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment2"
+        android:name="com.example.adiblarappp.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/writersFragment"
+        android:name="com.example.adiblarappp.WritersFragment"
+        android:label="fragment_writers"
+        tools:layout="@layout/fragment_writers" >
+        <action
+            android:id="@+id/action_writersFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_writersFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_writersFragment_to_literatureFragment"
+            app:destination="@id/literatureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveFragment"
+        android:name="com.example.adiblarappp.SaveFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_save" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.adiblarappp.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.adiblarappp.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/literatureFragment"
+        android:name="com.example.adiblarappp.LiteratureFragment"
+        android:label="fragment_literature"
+        tools:layout="@layout/fragment_literature" >
+        <action
+            android:id="@+id/action_literatureFragment_to_infoItemFragment"
+            app:destination="@id/infoItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoItemFragment"
+        android:name="com.example.adiblarappp.InfoItemFragment"
+        android:label="fragment_info_item"
+        tools:layout="@layout/fragment_info_item" />
+</navigation>

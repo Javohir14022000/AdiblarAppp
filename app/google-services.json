@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470188159028",
+    "project_id": "bookapp-72c35",
+    "storage_bucket": "bookapp-72c35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470188159028:android:f797b116ca97a5c4c59a61",
+        "android_client_info": {
+          "package_name": "com.example.adiblarappp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470188159028-5pkk7tbe4tqrqcofge7d4qlvjdj2qr1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtp9Eo2ybB4vv9vy8sL7z28j-niBtB_5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470188159028-5pkk7tbe4tqrqcofge7d4qlvjdj2qr1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
